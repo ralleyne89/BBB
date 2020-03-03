@@ -1,0 +1,38 @@
+.fa-window-close {
+    margin-top: 170px;
+}
+
+#sparechange {
+    margin: 0;
+    overflow: auto;
+    width: 100%;
+}
+
+img {
+    float: left;
+}
+
+.hustleinfo {
+    margin-top: 30px;
+}
+
+.hustletitle {
+    font-family: Shumi;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.hustlecost {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.header-description {
+    text-align: center;
+}

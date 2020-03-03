@@ -1,0 +1,30 @@
+.hero {
+    position: relative;
+
+}
+
+.container {
+    text-align: right;
+    width: 100%;
+}
+
+.unlock-header {
+    display: block;
+    font-family: Shumi;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.cost {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.unlock {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FEBE40;
+    border-bottom: #D39C3C solid 5px;
+}

@@ -1,0 +1,28 @@
+.button { 
+    background-color: #DA1C4B;
+    border: none;
+    border-bottom: rgb(160, 17, 53) solid 5px;
+    color: white;
+    width: 200px;
+    margin-top: -30px;
+}
+
+/* <div className="spare-change-container">
+        <button onClick={SpareChangeProgress} className="hustle-button spare-change-button">
+          <img
+            className="spare-change-img"
+            src="./img/BBB_hustles_spare_change.png"
+            alt=""
+          />
+        </button>
+        {clicked.isClicked === true ? (
+          <button onClick={SqueegeeProgress} className="hustle-button squeegee-button">
+            <img
+              className="squeegee-img"
+              src="./img/BBB_hustles_squeegee.png"
+              alt=""
+            />
+          </button>
+          
+        ) : null}
+      </div> */

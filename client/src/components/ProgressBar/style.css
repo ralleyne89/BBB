@@ -1,0 +1,7 @@
+.progress {
+    width: 400px;
+    top: 80px;
+    height: 3rem !important;
+    border: 3px solid lightgray;
+    border-radius: 4px;
+}

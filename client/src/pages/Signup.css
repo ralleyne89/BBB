@@ -1,0 +1,54 @@
+.header {
+    margin-top: 30px;
+    text-align: center;
+    font-family: Shumi;
+    font-size: 2rem;
+}
+
+p {
+    font-family: San Francisco Display;
+}
+
+.btn {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 30px auto;
+    color: white;
+    font-weight: bold;
+}
+
+.login {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+}
+
+.paragraph {
+    text-align: center;
+}
+
+.form-control {
+    width: 350px;
+}
+
+#username {
+    margin: 0 auto;
+}
+
+#email {
+    margin: 0 auto;
+}
+
+#pwd {
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+}

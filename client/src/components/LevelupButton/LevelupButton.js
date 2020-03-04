@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const LevelupButton = () => {
+const LevelupButton = ({cost}) => {
   return (
     <div style={{textAlign: "right", width: '100%'}}>
       <button className="button is-large">
@@ -20,7 +20,7 @@ const LevelupButton = () => {
             color: '#666666'
           }}
         >
-          $500
+          ${cost}
         </small>
       </button>
     </div>

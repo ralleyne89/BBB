@@ -13,15 +13,16 @@ import { useGlobalState } from "../../useGlobalState";
 
 import { HUSTLERS, HUSTLES } from "../../hustlerConfig";
 import Squeegee from "../Squeegee/Squeegee";
+import Steal from "../Steal/Steal";
 
 
-const UnlockSqueegee = ({ cost }) => {
+const UnlockSteal = ({ cost }) => {
   const [clicked, setClicked] = useState({ isClicked: false });
   const { state, dispatch } = useGlobalState();
   const [progressValue, setProgressValue] = useState(0);
 
-  function buySqueegee() {
-    dispatch({ type: BUY_HUSTLE, hustle: "squeegee" });
+  function buySteal() {
+    dispatch({ type: BUY_HUSTLE, hustle: "steal" });
     setClicked({ isClicked: true });
   }
 
@@ -29,7 +30,7 @@ const UnlockSqueegee = ({ cost }) => {
   return (
     <>
       {clicked.isClicked === false ? (
-        <section className="hero is-medium is-danger is-bold squeegeebutton">
+        <section className="hero is-medium is-danger is-bold steal-button">
           <div className="hero-body">
             <div className="container">
               <div className="container">
@@ -38,7 +39,7 @@ const UnlockSqueegee = ({ cost }) => {
                 <br />
                 <button
                   className="button is-large unlock"
-                  onClick={buySqueegee}
+                  onClick={buySteal}
                 >
                   <span className="icon is-medium">
                     <i className="fas fa-lock"></i>
@@ -51,10 +52,10 @@ const UnlockSqueegee = ({ cost }) => {
           </div>
         </section>
       ) : (
-        <Squeegee />
+        <Steal />
       )}
     </>
   );
 };
 
-export default UnlockSqueegee;
+export default UnlockSteal;

@@ -4,7 +4,11 @@
     margin: .5px 0;
     bottom: 0;
     height: 100px;
-    border-radius: 0;
+    border-radius: 4px;
     border-bottom: 2px solid rgb(136, 0, 0);
 }
 
+.navbuttons {
+    padding: 10px;
+    background-color: rgba(225, 225, 225, 0.5);
+}

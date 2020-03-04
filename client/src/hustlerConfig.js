@@ -6,6 +6,18 @@ export const HUSTLES = {
     squeegee: {
         cost: 5000,
         rate: 250
+    },
+    recycling: {
+        cost: 40000,
+        rate: 600
+    },
+    steal: {
+        cost: 150000,
+        rate: 2000
+    },
+    chopshop: {
+        cost: 500000,
+        rate: 15000
     }
 }
 

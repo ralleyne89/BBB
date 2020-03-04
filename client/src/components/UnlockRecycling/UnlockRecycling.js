@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./style.css";
+import React, {useState} from 'react';
+import './style.css';
 
 import {
   USE_HUSTLE,
@@ -12,24 +12,24 @@ import {
 import { useGlobalState } from "../../useGlobalState";
 
 import { HUSTLERS, HUSTLES } from "../../hustlerConfig";
-import Squeegee from "../Squeegee/Squeegee";
+import Recycling from '../Recycling/Recycling';
 
 
-const UnlockSqueegee = ({ cost }) => {
+const UnlockRecycling = ({cost}) => {
+
   const [clicked, setClicked] = useState({ isClicked: false });
   const { state, dispatch } = useGlobalState();
   const [progressValue, setProgressValue] = useState(0);
 
-  function buySqueegee() {
-    dispatch({ type: BUY_HUSTLE, hustle: "squeegee" });
+  function buyRecycling() {
+    dispatch({ type: BUY_HUSTLE, hustle: "recycling" });
     setClicked({ isClicked: true });
   }
-
 
   return (
     <>
       {clicked.isClicked === false ? (
-        <section className="hero is-medium is-danger is-bold squeegeebutton">
+        <section className="hero is-medium is-danger is-bold recycling-button">
           <div className="hero-body">
             <div className="container">
               <div className="container">
@@ -38,7 +38,7 @@ const UnlockSqueegee = ({ cost }) => {
                 <br />
                 <button
                   className="button is-large unlock"
-                  onClick={buySqueegee}
+                  onClick={buyRecycling}
                 >
                   <span className="icon is-medium">
                     <i className="fas fa-lock"></i>
@@ -51,10 +51,10 @@ const UnlockSqueegee = ({ cost }) => {
           </div>
         </section>
       ) : (
-        <Squeegee />
+        <Recycling/>
       )}
     </>
   );
 };
 
-export default UnlockSqueegee;
+export default UnlockRecycling;

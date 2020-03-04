@@ -15,22 +15,22 @@ import {useGlobalState} from '../../useGlobalState';
 
 
 
-const SpareChange = () => {
+const Steal = () => {
   
   const [progressValue, setProgressValue] = useState(0);
   const {state, dispatch} = useGlobalState();
     const [clicked, setClicked] = useState({isClicked: false});
 
-    function SpareChangeProgress() {
+    function StealProgress() {
 
       let seconds = 0;
       const intervalId = setInterval(() => {
         {
-          dispatch({type: USE_HUSTLE, hustle: 'spareChange'});
+          dispatch({type: USE_HUSTLE, hustle: 'squeegee'});
         }
-        if (seconds < 9) {
+        if (seconds < 77) {
           seconds += 1;
-          setProgressValue(seconds * 10);
+          setProgressValue(seconds * 38);
         } else {
           clearInterval(intervalId);
           setProgressValue(0);
@@ -46,20 +46,20 @@ const SpareChange = () => {
       {/* spare change container starts here */}
     <div className="spare-change-container columns">
       <div className="column">
-      <button onClick={SpareChangeProgress} className="hustle-button spare-change-button">
+      <button onClick={StealProgress} className="hustle-button steal-button">
         <img
-          className="spare-change-img"
-          src="./img/BBB_hustles_spare_change.png"
+          className="steal-img"
+          src="./img/BBB_hustles_squeegee.png"
           alt=""
         />
       </button>
       </div>
       <div className="column">
-      <b className="hustle-name">Spare Change</b>
+      <b className="hustle-name">Steal</b>
       {/* <b className="multiplier">x1</b> */}
       <ProgressBar value={progressValue} />
       <HustleLevel />
-      <LevelupButton cost={500} />
+      <LevelupButton cost={35000} />
 
       </div>
     </div>
@@ -70,4 +70,4 @@ const SpareChange = () => {
   }
 
 
-export default SpareChange;
+export default Steal;

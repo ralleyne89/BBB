@@ -1,7 +1,7 @@
 // Testing components for homepage
 import React, {useState, useEffect} from 'react';
 import UnlockHustle from '../components/UnlockSqueegee/UnlockSqueegee';
-import UnlockHustleTwo from '../components/UnlockHustleTwo/UnlockHustleTwo';
+import UnlockHustleTwo from '../components/UnlockRecycling/UnlockRecycling';
 import NavButtons from '../components/NavButtons/NavButtons';
 import Navbar from '../components/Navbar/Navbar';
 import SpareChange from '../components/SpareChange/SpareChange'
@@ -20,8 +20,10 @@ import {useGlobalState} from '../useGlobalState';
 import {HUSTLERS, HUSTLES} from '../hustlerConfig';
 import {Link} from 'react-router-dom';
 import mainTheme from "../assets/music/profile_music.mp3"
-import HustleBar from '../components/HustleBar/HustleBar';
 import UnlockSqueegee from '../components/UnlockSqueegee/UnlockSqueegee';
+import UnlockRecycling from '../components/UnlockRecycling/UnlockRecycling';
+import UnlockSteal from '../components/UnlockSteal/UnlockSteal';
+import UnlockChopShop from '../components/UnlockChopShop/UnlockChopShop';
 
 
 
@@ -31,31 +33,26 @@ const Home = () => {
   const [clicked, setClicked] = useState({isClicked: false});
   
   
-//   let playing = false
+  let playing = false
 
-// let themeSong = new Audio (mainTheme)
-
-
-// function bobTheme() {
-
-//   playing = true
-//   if (!themeSong.playing){
-//   themeSong.play()
-//   themeSong.volume = 0.5
-//   }
-// }
-
-// useEffect(() => {
-
-//   bobTheme()
-
-// }, [])
+let themeSong = new Audio (mainTheme)
 
 
-  function buySqueegee() {
-    dispatch({type: BUY_HUSTLE, hustle: 'squeegee'});
-    setClicked({isClicked: true});
+function bobTheme() {
+
+  playing = true
+  if (!themeSong.playing){
+  themeSong.play()
+  themeSong.volume = 0.5
   }
+}
+
+useEffect(() => {
+
+  bobTheme()
+
+}, [])
+
 
   return (
     <div>
@@ -65,9 +62,9 @@ const Home = () => {
       <div className="column is-half" style={{marginTop: '170px', padding: '0'}}>
     <SpareChange/>
       <UnlockSqueegee cost={5000} />
-      <UnlockHustle cost={40000} />
-      <UnlockHustle cost={150000} />
-      <UnlockHustle cost={500000} />
+      <UnlockRecycling cost={40000} />
+      <UnlockSteal cost={150000} />
+      <UnlockChopShop cost={500000} />
       </div>
       <div className="column is-half" style={{marginTop: '170px', padding: '0'}}>
       <UnlockHustle cost={2500000} />

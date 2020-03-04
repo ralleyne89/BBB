@@ -12,17 +12,25 @@ const NavButtons = () => {
     }
 
   return (
-    <div className="navbuttons">
+    <div className="navbuttons columns">
+      <div className="column">
       <Link to="/hustles">
         <button onClick = {start} className="button is-large nav">Hustles</button>
       </Link>
+      </div>
+      <div className="column">
       <Link to="/hustlers">
         <button onClick = {start} className="button is-large nav">Hustlers</button>
       </Link>
+      </div>
+      <div className="column">
       {/* <Link to="/shop"> */}
         <button onClick = {start} className="button is-large nav">Shop</button>
+      </div>
+      <div className="column">
       {/* </Link> */}
       <button onClick = {start} className="button is-large nav">Stats</button>
+      </div>
     </div>
   );
 };

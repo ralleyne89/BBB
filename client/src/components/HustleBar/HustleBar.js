@@ -60,8 +60,7 @@ const HustleBar = () => {
       return () => clearInterval(intervalId);
   
     }
-  
-    let hide = false;
+
   
     function buySqueegee() {
       dispatch({type: BUY_HUSTLE, hustle: 'squeegee'});

@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import { render } from 'react-router-dom'
 import { Motion, spring, presets } from 'react-motion'
 
 class MenuButton extends Component {

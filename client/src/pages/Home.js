@@ -1,12 +1,10 @@
 // Testing components for homepage
 import React, {useState, useEffect} from 'react';
-import LevelupButton from '../components/LevelupButton/LevelupButton';
-import ProgressBar from '../components/ProgressBar/ProgressBar';
-import HustleLevel from '../components/HustleLevel/HustleLevel';
-import UnlockHustle from '../components/UnlockHustle/UnlockHustle';
+import UnlockHustle from '../components/UnlockSqueegee/UnlockSqueegee';
 import UnlockHustleTwo from '../components/UnlockHustleTwo/UnlockHustleTwo';
 import NavButtons from '../components/NavButtons/NavButtons';
 import Navbar from '../components/Navbar/Navbar';
+import SpareChange from '../components/SpareChange/SpareChange'
 import './Home.css';
 
 import {
@@ -23,6 +21,7 @@ import {HUSTLERS, HUSTLES} from '../hustlerConfig';
 import {Link} from 'react-router-dom';
 import mainTheme from "../assets/music/profile_music.mp3"
 import HustleBar from '../components/HustleBar/HustleBar';
+import UnlockSqueegee from '../components/UnlockSqueegee/UnlockSqueegee';
 
 
 
@@ -62,15 +61,15 @@ const Home = () => {
     <div>
       <Navbar />
     
-    <div className="columns">
-      <div className="column is-half" style={{marginTop: '170px'}}>
-    <HustleBar/>
-      <UnlockHustle cost={5000} />
+    <div className="columns" style={{margin: '10px'}}>
+      <div className="column is-half" style={{marginTop: '170px', padding: '0'}}>
+    <SpareChange/>
+      <UnlockSqueegee cost={5000} />
       <UnlockHustle cost={40000} />
       <UnlockHustle cost={150000} />
       <UnlockHustle cost={500000} />
       </div>
-      <div className="column is-half" style={{marginTop: '170px'}}>
+      <div className="column is-half" style={{marginTop: '170px', padding: '0'}}>
       <UnlockHustle cost={2500000} />
       <UnlockHustle cost={8000000} />
       <UnlockHustle cost={50000000} />
@@ -81,13 +80,13 @@ const Home = () => {
       {/* <UnlockHustleTwo cost={5000} /> */}
 
       {/* this is the statement that unlocks the hustle */}
-      {clicked.isClicked === false ? (
+      {/* {clicked.isClicked === false ? (
         <section className="hero is-medium is-danger is-bold squeegeebutton">
           <div className="hero-body">
             <div className="container">
               <div className="container">
                 <h1 className="unlock-header">Next Hustle</h1>
-                <b className="cost">$40000</b>
+                <b className="cost">$5000</b>
                 <br />
                 <button
                   className="button is-large unlock"
@@ -103,7 +102,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-      ) : null}
+      ) : null} */}
 
 
       

@@ -24,8 +24,8 @@
 
 .unlock {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto !important;
     text-align: center;
-    background-color: #FEBE40;
-    border-bottom: #D39C3C solid 5px;
+    background-color: #FEBE40 !important;
+    border-bottom: #D39C3C solid 5px !important;
 }

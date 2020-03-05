@@ -46,8 +46,8 @@ const Steal = () => {
       {/* spare change container starts here */}
     <div className="spare-change-container columns">
       <div className="column">
-      <button onClick={StealProgress} className="hustle-button steal-button">
-        <img
+      <button onClick={StealProgress} className="hustle-button steal-">
+        <imgbutton
           className="steal-img"
           src="./img/BBB_hustles_squeegee.png"
           alt=""

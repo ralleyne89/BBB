@@ -58,19 +58,23 @@ useEffect(() => {
     <div>
       <Navbar />
     
-    <div className="columns" style={{margin: '10px'}}>
-      <div className="column is-half" style={{marginTop: '170px', padding: '0'}}>
+    <div className="columns" style={{margin: '10px', width: '100%', position: 'relative'}}>
+      <div className="column" style={{marginTop: '170px', padding: '0'}}>
     <SpareChange/>
       <UnlockSqueegee cost={5000} />
       <UnlockRecycling cost={40000} />
       <UnlockSteal cost={150000} />
       <UnlockChopShop cost={500000} />
       </div>
-      <div className="column is-half" style={{marginTop: '170px', padding: '0'}}>
+      <div className="column" style={{marginTop: '170px', padding: '0'}}>
       <UnlockHustle cost={2500000} />
       <UnlockHustle cost={8000000} />
       <UnlockHustle cost={50000000} />
       <UnlockHustle cost={73000000} />
+      <UnlockHustle cost={165000000} />
+      </div>
+      <div className="column" style={{marginTop: '170px', padding: '0'}}>
+      <img src="./img/BBB_character_body.png" alt="" srcset="" width='400px' style={{marginTop: '450px', marginLeft: '20px'}} />
       </div>
     </div>
 

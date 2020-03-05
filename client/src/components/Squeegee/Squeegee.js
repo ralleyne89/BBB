@@ -46,21 +46,32 @@ const Squeegee = () => {
       {/* spare change container starts here */}
     <div className="spare-change-container columns">
       <div className="column">
-      <button onClick={SqueegeeProgress} className="hustle-button spare-change-button">
+      
         <img
           className="squeegee-img"
           src="./img/BBB_hustles_squeegee.png"
           alt=""
         />
-      </button>
+      
       </div>
       <div className="column">
+      <HustleLevel/>
       <b className="hustle-name">Squeegee</b>
       {/* <b className="multiplier">x1</b> */}
       <ProgressBar value={progressValue} />
-      <HustleLevel />
-      <LevelupButton cost={10000} />
 
+      <div className="columns">
+          <div className="column">
+      <div className="money-button button" onClick={SqueegeeProgress}>
+        <img src="./img/coin.png" alt="" srcset="" className='coin'/>
+      </div>
+
+          </div>
+          <div className="column">
+      <LevelupButton cost={10000} />
+            
+          </div>
+        </div>
       </div>
     </div>
     </div>

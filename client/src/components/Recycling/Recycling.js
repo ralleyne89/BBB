@@ -38,30 +38,39 @@ const Recycling = () => {
 
   return (
     <div className="box hustle-container">
-      {/* spare change container starts here */}
-      <div className="recycling-container columns">
-        <div className="column">
-          <button
-            onClick={RecyclingProgress}
-            className="hustle-button spare-change-button"
-          >
-            <img
-              className="recycling-img"
-              src="./img/BBB_hustles_spare_change.png"
-              alt=""
-            />
-          </button>
-        </div>
-        <div className="column">
-          <b className="hustle-name">Recycling</b>
-          {/* <b className="multiplier">x1</b> */}
-          <ProgressBar value={progressValue} />
-          <HustleLevel />
-          <LevelupButton cost={18000} />
-        </div>
-      </div>
+{/* spare change container starts here */}
+<div className="columns">
+<div className="column">
+
+  <img
+    className="squeegee-img"
+    src="./img/BBB_hustles_squeegee.png"
+    alt=""
+  />
+
+</div>
+<div className="column">
+<HustleLevel/>
+<b className="hustle-name">Recycling</b>
+{/* <b className="multiplier">x1</b> */}
+
+<ProgressBar value={progressValue} />
+<div className="columns">
+    <div className="column">
+<div className="money-button button" onClick={RecyclingProgress}>
+  <img src="./img/coin.png" alt="" srcset="" className='coin'/>
+</div>
+
     </div>
-  );
+    <div className="column">
+<LevelupButton cost={10000} />
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+);
 };
 
 export default Recycling;

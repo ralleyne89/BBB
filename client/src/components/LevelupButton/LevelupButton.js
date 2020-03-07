@@ -3,25 +3,14 @@ import './style.css';
 
 const LevelupButton = ({cost}) => {
   return (
-    <div style={{textAlign: "right", width: '100%'}}>
-      <button className="button is-large">
+    <div>
+      <button className="button" id="level-button">
         <span className="icon is-medium">
           <i className="fas fa-arrow-alt-circle-up"></i>
+          <p style={{marginLeft: '5px'}}>Level Up</p>
+          <br/>
+          {/* <small>${cost}</small> */}
         </span>
-        <span style={{marginRight: '10px'}}>LevelUp</span>
-        <br />
-        <small
-          style={{
-            backgroundColor: '#FEBE40',
-            borderRadius: '20px',
-            fontSize: '12px',
-            padding: '3px',
-            fontWeight: 'bold',
-            color: '#666666'
-          }}
-        >
-          ${cost}
-        </small>
       </button>
     </div>
   );

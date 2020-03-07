@@ -1,12 +1,7 @@
-.hero {
-    position: relative;
-    margin: 20px;
-    border-radius: 5px;
-}
 
-.container {
-    width: 100%;
-    height: 50px;
+
+.hero-body {
+    padding: 30px !important;
 }
 
 .unlock-header {
@@ -28,4 +23,12 @@
     text-align: center;
     background-color: #FEBE40 !important;
     border-bottom: #D39C3C solid 5px !important;
+}
+
+.squeegee-container {
+    position: relative;
+        margin: 20px !important;
+        border-radius: 25px;
+        width: 600px;
+        height: 224px;
 }

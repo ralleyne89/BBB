@@ -29,9 +29,8 @@ const UnlockSqueegee = ({ cost }) => {
   return (
     <>
       {clicked.isClicked === false ? (
-        <section className="hero is-medium is-danger is-bold squeegeebutton">
+        <section className="hero is-medium is-danger is-bold squeegee-container">
           <div className="hero-body">
-            <div className="container">
               <div className="container">
                 <h1 className="unlock-header">Next Hustle</h1>
                 <b className="cost">{`$${cost}`}</b>
@@ -47,7 +46,7 @@ const UnlockSqueegee = ({ cost }) => {
                   <br />
                 </button>
               </div>
-            </div>
+            
           </div>
         </section>
       ) : (

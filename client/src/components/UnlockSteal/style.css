@@ -1,0 +1,7 @@
+.steal-container {
+    position: relative;
+        margin: 20px !important;
+        border-radius: 25px;
+        width: 600px;
+        height: 224px;
+}

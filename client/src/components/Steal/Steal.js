@@ -28,9 +28,9 @@ const Steal = () => {
         {
           dispatch({type: USE_HUSTLE, hustle: 'squeegee'});
         }
-        if (seconds < 77) {
+        if (seconds < 45) {
           seconds += 1;
-          setProgressValue(seconds * 38);
+          setProgressValue(seconds * 2.25);
         } else {
           clearInterval(intervalId);
           setProgressValue(0);
@@ -42,28 +42,39 @@ const Steal = () => {
     }
   
   return (
-          <div className="box hustle-container">
-      {/* spare change container starts here */}
-    <div className="spare-change-container columns">
-      <div className="column">
-      <button onClick={StealProgress} className="hustle-button steal-button">
-        <img
-          className="steal-img"
-          src="./img/BBB_hustles_squeegee.png"
-          alt=""
-        />
-      </button>
-      </div>
-      <div className="column">
-      <b className="hustle-name">Steal</b>
-      {/* <b className="multiplier">x1</b> */}
-      <ProgressBar value={progressValue} />
-      <HustleLevel />
-      <LevelupButton cost={35000} />
+    <div className="box hustle-container">
+    {/* spare change container starts here */}
+  <div className="spare-change-container columns">
+    <div className="column">
+    
+      <img
+        className="hustle-img"
+        src="./img/steal.png"
+        alt=""
+      />
+    
+    </div>
+    <div className="column">
+    <HustleLevel/>
+    <b className="hustle-name">Steal</b>
+    {/* <b className="multiplier">x1</b> */}
+    <ProgressBar value={progressValue} />
 
+    <div className="columns">
+        <div className="column">
+    <div className="money-button button" onClick={StealProgress}>
+      <img src="./img/coin.png" alt="" srcset="" className='coin'/>
+    </div>
+
+        </div>
+        <div className="column">
+    <LevelupButton cost={35000} />
+          
+        </div>
       </div>
     </div>
-    </div>
+  </div>
+  </div>
   )
 
 

@@ -30,7 +30,7 @@ const SpareChange = () => {
         }
         if (seconds < 9) {
           seconds += 1;
-          setProgressValue(seconds * 10);
+          setProgressValue(seconds * 9.5);
         } else {
           clearInterval(intervalId);
           setProgressValue(0);
@@ -46,20 +46,32 @@ const SpareChange = () => {
       {/* spare change container starts here */}
     <div className="spare-change-container columns">
       <div className="column">
-      <button onClick={SpareChangeProgress} className="hustle-button spare-change-button">
+      
         <img
-          className="spare-change-img"
+          className="hustle-img"
           src="./img/BBB_hustles_spare_change.png"
           alt=""
         />
-      </button>
+
       </div>
       <div className="column">
+      <HustleLevel />
       <b className="hustle-name">Spare Change</b>
       {/* <b className="multiplier">x1</b> */}
       <ProgressBar value={progressValue} />
-      <HustleLevel />
+
+      <div className="columns">
+          <div className="column">
+      <div className="money-button button" onClick={SpareChangeProgress}>
+        <img src="./img/coin.png" alt="" srcset="" className='coin'/>
+      </div>
+
+          </div>
+          <div className="column">
       <LevelupButton cost={500} />
+            
+          </div>
+        </div>
 
       </div>
     </div>

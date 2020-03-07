@@ -1,28 +1,13 @@
-.button { 
-    background-color: #DA1C4B;
-    border: none;
-    border-bottom: rgb(160, 17, 53) solid 5px;
-    color: white;
-    width: 200px;
-    margin-top: -30px;
+#level-button { 
+  width: 150px;
+  height: 40px;
+  overflow: hidden;
+  background-color: #ffcc33;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #fe9924;
+  border-top-width: 0px;
+  border-bottom-width: 3px;
+  border-left-width: 0px;
+  border-right-width: 0px;
 }
-
-/* <div className="spare-change-container">
-        <button onClick={SpareChangeProgress} className="hustle-button spare-change-button">
-          <img
-            className="spare-change-img"
-            src="./img/BBB_hustles_spare_change.png"
-            alt=""
-          />
-        </button>
-        {clicked.isClicked === true ? (
-          <button onClick={SqueegeeProgress} className="hustle-button squeegee-button">
-            <img
-              className="squeegee-img"
-              src="./img/BBB_hustles_squeegee.png"
-              alt=""
-            />
-          </button>
-          
-        ) : null}
-      </div> */

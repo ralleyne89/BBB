@@ -30,7 +30,7 @@ const UnlockSteal = ({ cost }) => {
   return (
     <>
       {clicked.isClicked === false ? (
-        <section className="hero is-medium is-danger is-bold steal-button">
+        <section className="hero is-medium is-danger is-bold steal-container">
           <div className="hero-body">
             <div className="container">
               <div className="container">

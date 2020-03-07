@@ -43,8 +43,8 @@ const Recycling = () => {
 <div className="column">
 
   <img
-    className="squeegee-img"
-    src="./img/BBB_hustles_squeegee.png"
+    className="hustle-img"
+    src="./img/recycle.png"
     alt=""
   />
 

@@ -48,7 +48,7 @@ const Squeegee = () => {
       <div className="column">
       
         <img
-          className="squeegee-img"
+          className="hustle-img"
           src="./img/BBB_hustles_squeegee.png"
           alt=""
         />

@@ -74,7 +74,7 @@ useEffect(() => {
       <UnlockHustle cost={165000000} />
       </div>
       <div className="column" style={{marginTop: '170px', padding: '0'}}>
-      <img src="./img/BBB_character_body.png" alt="" srcset="" width='400px' style={{marginTop: '450px', marginLeft: '20px'}} />
+      <img src="./img/BBB_character_body.png" alt="" srcset="" width='400px' style={{marginTop: '170px', marginLeft: '20px'}} />
       </div>
     </div>
 

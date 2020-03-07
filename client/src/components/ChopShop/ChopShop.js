@@ -43,8 +43,8 @@ const ChopShop = () => {
       <div className="column">
       
         <img
-          className="squeegee-img"
-          src="./img/BBB_hustles_squeegee.png"
+          className="hustle-img"
+          src="./img/chopshop.png"
           alt=""
         />
       

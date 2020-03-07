@@ -48,7 +48,7 @@ const SpareChange = () => {
       <div className="column">
       
         <img
-          className="spare-change-img"
+          className="hustle-img"
           src="./img/BBB_hustles_spare_change.png"
           alt=""
         />

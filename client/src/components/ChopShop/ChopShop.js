@@ -24,9 +24,9 @@ const ChopShop = () => {
       {
         dispatch({type: USE_HUSTLE, hustle: 'chopshop'});
       }
-      if (seconds < 101) {
+      if (seconds < 60) {
         seconds += 1;
-        setProgressValue(seconds * 2);
+        setProgressValue(seconds * 1.68);
       } else {
         clearInterval(intervalId);
         setProgressValue(0);

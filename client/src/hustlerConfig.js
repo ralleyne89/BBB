@@ -13,11 +13,11 @@ export const HUSTLES = {
     },
     steal: {
         cost: 150000,
-        rate: 2000
+        rate: 1000
     },
     chopshop: {
         cost: 500000,
-        rate: 15000
+        rate: 1500
     }
 }
 

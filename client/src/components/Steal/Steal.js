@@ -28,9 +28,9 @@ const Steal = () => {
         {
           dispatch({type: USE_HUSTLE, hustle: 'squeegee'});
         }
-        if (seconds < 77) {
+        if (seconds < 45) {
           seconds += 1;
-          setProgressValue(seconds * 38);
+          setProgressValue(seconds * 2.25);
         } else {
           clearInterval(intervalId);
           setProgressValue(0);

@@ -30,7 +30,7 @@ const SpareChange = () => {
         }
         if (seconds < 9) {
           seconds += 1;
-          setProgressValue(seconds * 10);
+          setProgressValue(seconds * 9.5);
         } else {
           clearInterval(intervalId);
           setProgressValue(0);

@@ -8,3 +8,4 @@ The basic idea of generating revenue is this -- you’ll have one usable item eq
 
 Once the project is fleshed out, it would be really cool to upscale the item database/databases and have Bob move to different locations that have different item pools. The idea is that eventually, if there are enough items/item pools, people could compare how their characters look and the items they have and get really creative with it.  
 
+Deployed App: https://bobs-big-break.herokuapp.com/

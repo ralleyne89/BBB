@@ -11,7 +11,6 @@ import {
 
 import { useGlobalState } from "../../useGlobalState";
 
-import { HUSTLERS, HUSTLES } from "../../hustlerConfig";
 import Squeegee from "../Squeegee/Squeegee";
 
 

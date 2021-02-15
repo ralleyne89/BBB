@@ -9,22 +9,22 @@ import './style.css';
 function Navbar() {
   const {state, dispatch} = useGlobalState();
   return (
-    <nav className="navbar navbar-expand navbar-dark bank">
+    <nav className="navbar navbar-expand bank">
       <div className="container">
-        <div className="coin-container">
-        <img className='coin-img' src="./img/coin.png" alt="" />
-        <p className='coin-total'>${state.disposableCoins}</p>
-        </div>
         {/* Bob icon that connects to inventory page */}
 
         <Link to="/inventory">
           <img
             className="bob-icon"
             src="./img/BBB_character_icon.png"
-            width="100px"
+            width="60px"
             alt=""
           />
         </Link>
+        <div className="coin-container">
+        <p className='coin-total'>${state.disposableCoins}</p>
+        <img className='coin-img' src="./img/coin.png" alt="" width={30}/>
+        </div>
       <MenuButton/>
       </div>
     </nav>

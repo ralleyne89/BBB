@@ -31,7 +31,7 @@ const Hustlers = () => {
         <Link to="/profile">
           <i
             className="far fa-window-close fa-4x"
-            style={{marginTop: '170px'}}
+            style={{marginTop: '170px', float: 'right'}}
           ></i>
         </Link>
         <h1 className="header">Hustlers</h1>

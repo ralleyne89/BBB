@@ -12,7 +12,7 @@ const NavButtons = () => {
     }
 
   return (
-    <div className="navbuttons columns">
+    <div className="navbuttons columns" style={{background: '#dc224a'}}>
       <div className="column">
       <Link to="/hustles">
         <button onClick = {start} className="button is-large nav">Hustles</button>

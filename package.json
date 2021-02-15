@@ -1,7 +1,7 @@
 {
-  "name": "create-react-express-jwt-server",
+  "name": "bobs-big-break",
   "version": "2.1.2",
-  "description": "Mern Demo",
+  "description": "A hustlers grind to the top",
   "main": "server.js",
   "engine": {
     "node": "12.x"
@@ -15,7 +15,7 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "author": "Thomas Verdone, Reginald Alleyne, Kevin Heintz, Ryan Braudo",
+  "author": "Thomas Verdone & Reginald Alleyne",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.0.2",

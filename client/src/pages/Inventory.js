@@ -24,14 +24,11 @@ const Inventory = () => {
   return (
     <>
     <Navbar/>
-    <div className="container">
+    <div className="container" style={{paddingTop: 50}}>
       <Link to="/profile">
-        <i
-          className="far fa-window-close fa-4x"
-          style={{marginTop: '170px', float: 'right'}}
-        ></i>
+      <i  className="far fa-window-close fa-4x" style={{margin: 0, float: 'right', marginTop: 50}}/>
       </Link>
-      <h1 className="header">Inventory</h1>
+      <h1 className="header" style={{margin: 0, color: '#fff'}}>Inventory</h1>
       <hr />
       {wearsHat.isWearing === 'none' ? (
         <img

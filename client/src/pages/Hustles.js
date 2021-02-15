@@ -7,19 +7,15 @@ const Hustles = () => {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="container" style={{paddingTop: 50}}>
         <Link to="/profile">
-          <i
-            className="far fa-window-close fa-4x"
-            style={{marginTop: '170px', float: 'right'}}
-          ></i>
+        <i  className="far fa-window-close fa-4x" style={{margin: 0, float: 'right', marginTop: 50}}/>
         </Link>
-        <h1 className="header">Hustles</h1>
-        <p className="header-description">
+        <h1 className="header" style={{margin: 0, color: '#fff'}}>Hustles</h1>
+        <p className="header-description" style={{color: '#fff'}}>
           PURCHASE THESE BOOSTERS TO GIVE YOUR HUSTLE AN UPGRADE
         </p>
         <hr />
-
         <div className="box" id="spare-change">
           <img src="./img/BBB_hustles_spare_change.png" width="100px" alt="" />
           <div className="hustleinfo">

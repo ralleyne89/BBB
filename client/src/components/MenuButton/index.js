@@ -20,7 +20,7 @@ class MenuButton extends Component {
       cursor: 'pointer',
       // disable touch highlighting on devices
       WebkitTapHighlightColor: "rgba(0,0,0,0)",
-      marginTop: '30px'
+      margin: 'auto 0'
     }
     
     return (

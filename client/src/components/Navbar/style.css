@@ -1,9 +1,8 @@
 .navbar {
   top: 0;
   width: 100%;
-  height: 150px;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.2);
+  background: #dc224a;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
   z-index: 100;
   position: fixed;
@@ -17,22 +16,23 @@
 }
 
 .coin-img {
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
 }
 
 .bob-icon {
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
 }
 
 .coin-total {
-  float: left;
+  display: block;
+  margin-right: 10px;
+  font-family: Poppins;
 }
 
 .coin-container {
-  padding-top: 10px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

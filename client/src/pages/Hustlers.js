@@ -27,14 +27,14 @@ const Hustlers = () => {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="container" style={{paddingTop: 50}}>
         <Link to="/profile">
-          <i
-            className="far fa-window-close fa-4x"
-            style={{marginTop: '170px'}}
-          ></i>
+        <i  className="far fa-window-close fa-4x" style={{margin: 0, float: 'right', marginTop: 50}}/>
         </Link>
-        <h1 className="header">Hustlers</h1>
+        <h1 className="header" style={{margin: 0, color: '#fff'}}>Hustlers</h1>
+        <p className="header-description" style={{color: '#fff'}}>
+          WHAT'S A HUSTLE WITHOUT A HUSTLER? STACK UP THE SQUAD!
+        </p>
         <hr />
 
         {clicked.isClicked === false ? (

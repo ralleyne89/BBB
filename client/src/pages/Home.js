@@ -7,14 +7,6 @@ import Navbar from '../components/Navbar/Navbar';
 import SpareChange from '../components/SpareChange/SpareChange'
 import './Home.css';
 
-import {
-  USE_HUSTLE,
-  USE_PASSIVE_HUSTLE,
-  INITIALIZE_PASSIVE_INTERVAL,
-  BUY_HUSTLE,
-  BUY_HUSTLER,
-} from '../actions';
-
 import {useGlobalState} from '../useGlobalState';
 
 import {HUSTLERS, HUSTLES} from '../hustlerConfig';
@@ -58,23 +50,23 @@ useEffect(() => {
     <div>
       <Navbar />
     
-    <div className="columns" style={{margin: '10px', width: '100%', position: 'relative'}}>
-      <div className="column" style={{marginTop: '170px', padding: '0'}}>
+    <div className="columns" style={{width: '100%', display: 'flex', justifyContent: 'center', paddingTop: 120}}>
+      <div className="column">
     <SpareChange/>
       <UnlockSqueegee cost={5000} />
       <UnlockRecycling cost={40000} />
       <UnlockSteal cost={150000} />
       <UnlockChopShop cost={500000} />
       </div>
-      <div className="column" style={{marginTop: '170px', padding: '0'}}>
+      <div className="column">
       <UnlockHustle cost={2500000} />
       <UnlockHustle cost={8000000} />
       <UnlockHustle cost={50000000} />
       <UnlockHustle cost={73000000} />
       <UnlockHustle cost={165000000} />
       </div>
-      <div className="column" style={{marginTop: '170px', padding: '0'}}>
-      <img src="./img/BBB_character_body.png" alt="" srcset="" width='400px' style={{marginTop: '170px', marginLeft: '20px'}} />
+      <div style={{position: 'fixed', right: 10, bottom: 85}}>
+      <img src="./img/BBB_character_body.png" alt="" srcset="" width='150px' />
       </div>
     </div>
 

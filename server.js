@@ -33,8 +33,8 @@ const dbOptions = {
 };
 
 mongoose
-  .connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/appDB', dbOptions)
-  .then(() => console.log("MongoDB Connected!"))
+.connect(process.env.MONGODB_URI || 'mongodb+srv://bobUser:bobUser@cluster0.ea3ur.mongodb.net/myFirstDatabase?', dbOptions)
+.then(() => console.log("MongoDB Connected!"))
   .catch(err => console.error(err));
 
 

@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const morgan = require('morgan'); // used to see requests
 const db = require('./models');
 const PORT = process.env.PORT || 3001;
+const user = require('./routes/user')
 
 const isAuthenticated = require("./config/isAuthenticated");
 const auth = require("./config/auth");
@@ -60,18 +61,7 @@ app.post('/api/signup', (req, res) => {
     .catch(err => res.status(400).json(err));
 });
 
-// Any route with isAuthenticated is protected and you need a valid token
-// to access
-
-app.get('/api/user/:id', isAuthenticated, (req, res) => {
-  db.User.findById(req.params.id).then(data => {
-    if(data) {
-      res.json(data);
-    } else {
-      res.status(404).send({success: false, message: 'No user found'});
-    }
-  }).catch(err => res.status(400).send(err));
-});
+app.use('/api/user', user)
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -82,40 +72,6 @@ app.get('/', isAuthenticated /* Using the express jwt MW here */, (req, res) => 
   res.send('You are authenticated'); //Sending some response when authenticated
 });
 
-app.get('/api/users/:id/coins', isAuthenticated, (req, res) =>{
-  if (req.user.id !== req.params.id) {
-    // if you're not logged in as the person you're 
-    // asking for info for, you're not allowed in
-    return res.status(403).end()
-  }
-  else {
-    res.send('getting coins your')
-  }
-  console.log(req.user)
-  console.log(req.params)
-  // prevent user from accessing other users
-  // 
-  res.end()
-})
-
-
-app.put('/api/users/:id/coins', isAuthenticated, (req, res) => {
-  if (req.user.id !== req.params.id) {
-
-    // if you're not logged in as the person you're 
-    // asking for info for, you're not allowed in
-    return res.status(403).end()
-  }
- 
-  db.User.findOneAndUpdate({
-    coins: req.body.coins  
-  }).then(data => {
-    res.json(data)
-  })
-
-  console.log(req.body.coins)
-  console.log(req.params)
-})
 
 
 // Error handling
